@@ -1,0 +1,584 @@
+:root {
+  font-family:
+    Inter, "PingFang SC", "Microsoft YaHei", system-ui, -apple-system, BlinkMacSystemFont, "Segoe UI",
+    sans-serif;
+  color: #1f2933;
+  background: #f4f7f2;
+  font-synthesis: none;
+  text-rendering: optimizeLegibility;
+}
+
+* {
+  box-sizing: border-box;
+}
+
+body {
+  margin: 0;
+  min-width: 320px;
+}
+
+button,
+input,
+select {
+  font: inherit;
+}
+
+button {
+  cursor: pointer;
+}
+
+.app-shell {
+  min-height: 100vh;
+  display: grid;
+  grid-template-columns: 248px 1fr;
+}
+
+.sidebar {
+  background: #ffffff;
+  border-right: 1px solid #dde5d8;
+  padding: 24px 18px;
+}
+
+.brand {
+  display: flex;
+  gap: 12px;
+  align-items: center;
+  margin-bottom: 32px;
+}
+
+.brand-mark {
+  width: 42px;
+  height: 42px;
+  display: grid;
+  place-items: center;
+  border-radius: 8px;
+  background: #2f7d32;
+  color: #fff;
+  font-weight: 800;
+}
+
+.brand strong,
+.brand span {
+  display: block;
+}
+
+.brand span,
+.topbar p,
+.stat-card p,
+.stat-card span,
+.compact-card span,
+.level-card span,
+.reward-card span,
+.timeline-item span,
+.presale-card span,
+.presale-card small,
+.fruit-body span,
+.fruit-body p {
+  color: #667085;
+}
+
+.nav-list {
+  display: grid;
+  gap: 8px;
+}
+
+.nav-item {
+  display: flex;
+  gap: 10px;
+  align-items: center;
+  min-height: 42px;
+  padding: 0 12px;
+  border-radius: 8px;
+  color: #344054;
+  text-decoration: none;
+}
+
+.nav-item.router-link-active {
+  background: #e8f3e4;
+  color: #236229;
+  font-weight: 700;
+}
+
+.main-panel {
+  padding: 28px;
+  overflow-x: hidden;
+}
+
+.topbar {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-bottom: 24px;
+}
+
+.topbar p,
+.topbar h1 {
+  margin: 0;
+}
+
+.topbar h1 {
+  font-size: 28px;
+}
+
+.status-pill {
+  display: inline-flex;
+  gap: 8px;
+  align-items: center;
+  padding: 8px 12px;
+  border: 1px solid #cfe3c7;
+  border-radius: 999px;
+  background: #fff;
+  color: #236229;
+  font-weight: 700;
+}
+
+.page-stack {
+  display: grid;
+  gap: 20px;
+}
+
+.stats-grid,
+.card-grid,
+.recommendation-grid {
+  display: grid;
+  gap: 16px;
+}
+
+.stats-grid {
+  grid-template-columns: repeat(4, minmax(0, 1fr));
+}
+
+.content-grid {
+  display: grid;
+  gap: 20px;
+}
+
+.two-columns {
+  grid-template-columns: minmax(0, 1.25fr) minmax(320px, 0.75fr);
+}
+
+.panel,
+.stat-card,
+.toolbar-panel {
+  background: #fff;
+  border: 1px solid #dde5d8;
+  border-radius: 8px;
+  box-shadow: 0 12px 24px rgba(31, 41, 51, 0.05);
+}
+
+.panel {
+  padding: 20px;
+}
+
+.toolbar-panel {
+  display: grid;
+  grid-template-columns: 1fr 220px;
+  gap: 14px;
+  padding: 16px;
+}
+
+.toolbar-panel label {
+  display: grid;
+  gap: 6px;
+  color: #344054;
+  font-weight: 700;
+}
+
+.panel-header {
+  display: flex;
+  justify-content: space-between;
+  gap: 14px;
+  align-items: center;
+  margin-bottom: 16px;
+}
+
+.panel-header h2 {
+  margin: 0;
+  font-size: 18px;
+}
+
+.stat-card {
+  display: flex;
+  align-items: center;
+  gap: 14px;
+  padding: 18px;
+}
+
+.stat-icon {
+  width: 44px;
+  height: 44px;
+  display: grid;
+  place-items: center;
+  border-radius: 8px;
+  color: #236229;
+  background: #e8f3e4;
+}
+
+.stat-card p,
+.stat-card strong,
+.stat-card span {
+  display: block;
+  margin: 0;
+}
+
+.stat-card strong {
+  font-size: 26px;
+}
+
+.rank-list,
+.timeline {
+  display: grid;
+  gap: 10px;
+}
+
+.rank-item,
+.compact-card,
+.timeline-item {
+  display: flex;
+  justify-content: space-between;
+  gap: 16px;
+  align-items: center;
+  padding: 12px;
+  border: 1px solid #e4eadf;
+  border-radius: 8px;
+}
+
+.count-badge {
+  padding: 4px 10px;
+  border-radius: 999px;
+  background: #edf6e9;
+  color: #236229;
+  font-size: 13px;
+  font-weight: 800;
+}
+
+.data-table tr.selected td {
+  background: #f5fbf2;
+}
+
+.data-table tbody tr {
+  cursor: pointer;
+}
+
+.detail-box {
+  display: grid;
+  gap: 8px;
+  margin-bottom: 14px;
+  padding: 14px;
+  border-radius: 8px;
+  background: #f5fbf2;
+  border: 1px solid #d8e8d1;
+}
+
+.detail-box strong,
+.detail-box span {
+  display: block;
+}
+
+.detail-box p {
+  margin: 0;
+  color: #344054;
+}
+
+.rank-item strong,
+.rank-item span,
+.compact-card strong,
+.compact-card span,
+.timeline-item strong,
+.timeline-item span {
+  display: block;
+}
+
+.data-table {
+  width: 100%;
+  border-collapse: collapse;
+}
+
+.data-table th,
+.data-table td {
+  padding: 12px;
+  border-bottom: 1px solid #e4eadf;
+  text-align: left;
+  vertical-align: top;
+}
+
+.data-table th {
+  color: #667085;
+  font-size: 13px;
+  font-weight: 700;
+}
+
+.form-stack {
+  display: grid;
+  gap: 14px;
+}
+
+.form-stack label {
+  display: grid;
+  gap: 6px;
+  color: #344054;
+  font-weight: 700;
+}
+
+.form-row {
+  display: grid;
+  grid-template-columns: repeat(2, minmax(0, 1fr));
+  gap: 12px;
+}
+
+.inline-form {
+  display: grid;
+  grid-template-columns: 140px 1fr 96px;
+  gap: 10px;
+  margin-bottom: 16px;
+}
+
+input,
+select {
+  min-height: 42px;
+  border: 1px solid #cfd9c9;
+  border-radius: 8px;
+  padding: 0 12px;
+  color: #1f2933;
+  background: #fff;
+}
+
+.primary-button,
+.secondary-button {
+  border: 0;
+  border-radius: 8px;
+  min-height: 42px;
+  padding: 0 14px;
+  font-weight: 800;
+}
+
+.primary-button {
+  background: #2f7d32;
+  color: #fff;
+}
+
+.secondary-button {
+  background: #edf6e9;
+  color: #236229;
+}
+
+.message-banner {
+  margin-bottom: 12px;
+  padding: 10px 12px;
+  border-radius: 8px;
+  background: #e8f3e4;
+  color: #236229;
+  font-weight: 700;
+}
+
+.message-banner.error {
+  background: #fff1f0;
+  color: #b42318;
+}
+
+.empty-state {
+  display: grid;
+  place-items: center;
+  gap: 8px;
+  min-height: 160px;
+  color: #667085;
+}
+
+.level-card,
+.reward-card,
+.presale-card,
+.fruit-card {
+  border: 1px solid #e4eadf;
+  border-radius: 8px;
+  padding: 16px;
+}
+
+.level-card {
+  display: grid;
+  gap: 12px;
+}
+
+.level-progress {
+  height: 8px;
+  overflow: hidden;
+  border-radius: 999px;
+  background: #e4eadf;
+}
+
+.level-progress div {
+  height: 100%;
+  background: #2f7d32;
+}
+
+.level-card strong,
+.level-card span,
+.reward-card strong,
+.reward-card span,
+.presale-card strong,
+.presale-card span {
+  display: block;
+}
+
+.level-card ul {
+  margin: 0;
+  padding-left: 18px;
+  color: #344054;
+}
+
+.reward-card,
+.presale-card {
+  display: grid;
+  gap: 12px;
+}
+
+.reward-meta,
+.price-row {
+  display: flex;
+  justify-content: space-between;
+  gap: 12px;
+  align-items: center;
+}
+
+.negative {
+  color: #b42318;
+}
+
+.progress-track {
+  height: 8px;
+  border-radius: 999px;
+  overflow: hidden;
+  background: #e4eadf;
+}
+
+.progress-track div {
+  height: 100%;
+  background: #2f7d32;
+}
+
+.order-list {
+  display: grid;
+  gap: 10px;
+  margin-top: 20px;
+  padding-top: 18px;
+  border-top: 1px solid #e4eadf;
+}
+
+.order-list h3 {
+  margin: 0;
+  font-size: 16px;
+}
+
+.recommendation-grid {
+  grid-template-columns: repeat(2, minmax(0, 1fr));
+}
+
+.fruit-card {
+  display: grid;
+  grid-template-columns: 72px 1fr;
+  gap: 14px;
+}
+
+.fruit-visual {
+  width: 72px;
+  height: 72px;
+  display: grid;
+  place-items: center;
+  border-radius: 8px;
+  background: #f7d154;
+  color: #1f2933;
+  font-size: 28px;
+  font-weight: 900;
+}
+
+.fruit-body {
+  display: grid;
+  gap: 8px;
+}
+
+.fruit-body strong,
+.fruit-body span {
+  display: block;
+}
+
+.fruit-body p {
+  margin: 0;
+}
+
+.price-label {
+  color: #236229;
+}
+
+.tag-list {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 8px;
+}
+
+.tag-list span {
+  padding: 4px 8px;
+  border-radius: 999px;
+  background: #f0f5ed;
+  color: #344054;
+  font-size: 12px;
+}
+
+@media (max-width: 1080px) {
+  .app-shell {
+    grid-template-columns: 1fr;
+  }
+
+  .sidebar {
+    position: sticky;
+    top: 0;
+    z-index: 10;
+    padding: 14px;
+  }
+
+  .brand {
+    margin-bottom: 12px;
+  }
+
+  .nav-list {
+    grid-template-columns: repeat(3, minmax(0, 1fr));
+  }
+
+  .stats-grid,
+  .two-columns,
+  .recommendation-grid,
+  .toolbar-panel {
+    grid-template-columns: 1fr;
+  }
+}
+
+@media (max-width: 640px) {
+  .main-panel {
+    padding: 18px 12px;
+  }
+
+  .topbar {
+    align-items: flex-start;
+    gap: 12px;
+    flex-direction: column;
+  }
+
+  .nav-list {
+    grid-template-columns: repeat(2, minmax(0, 1fr));
+  }
+
+  .stats-grid {
+    grid-template-columns: 1fr;
+  }
+
+  .data-table {
+    display: block;
+    overflow-x: auto;
+  }
+
+  .form-row {
+    grid-template-columns: 1fr;
+  }
+
+  .inline-form {
+    grid-template-columns: 1fr;
+  }
+}
