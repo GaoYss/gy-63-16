@@ -10,3 +10,4 @@ class FruitRecommendation(BaseModel):
     price: float
     tags: list[str]
     reason: str
+    score: float

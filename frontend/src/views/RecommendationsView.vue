@@ -25,7 +25,10 @@
               <strong>{{ fruit.name }}</strong>
               <span>{{ fruit.origin }} · {{ fruit.category }}</span>
             </div>
-            <b>新鲜度 {{ fruit.freshness_score }}</b>
+            <div class="score-row">
+              <b class="score-badge">推荐分 {{ fruit.score.toFixed(1) }}</b>
+              <b>新鲜度 {{ fruit.freshness_score }}</b>
+            </div>
             <strong class="price-label">￥{{ fruit.price }}</strong>
             <p>{{ fruit.reason }}</p>
             <div class="tag-list">

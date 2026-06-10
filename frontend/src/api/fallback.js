@@ -125,6 +125,7 @@ export const fallbackRecommendations = [
     price: 29.9,
     tags: ['高甜', '无籽', '冷链到店'],
     reason: '新鲜度高，适合作为今日主推',
+    score: 98.0,
   },
   {
     id: 2,
@@ -135,6 +136,7 @@ export const fallbackRecommendations = [
     price: 8.8,
     tags: ['维C', '早餐', '会员热购'],
     reason: '到店批次稳定，适合搭配早餐场景推荐',
+    score: 95.0,
   },
   {
     id: 3,
@@ -145,6 +147,7 @@ export const fallbackRecommendations = [
     price: 42,
     tags: ['香甜', '预售同款', '高客单'],
     reason: '适合热带水果偏好会员',
+    score: 92.0,
   },
   {
     id: 4,
@@ -155,5 +158,6 @@ export const fallbackRecommendations = [
     price: 16.9,
     tags: ['多汁', '家庭装', '复购高'],
     reason: '到店批次新鲜度高，可提升复购',
+    score: 96.0,
   },
 ]

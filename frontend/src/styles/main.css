@@ -522,6 +522,23 @@ select {
   font-size: 12px;
 }
 
+.score-row {
+  display: flex;
+  gap: 12px;
+  align-items: center;
+  flex-wrap: wrap;
+}
+
+.score-badge {
+  padding: 4px 10px;
+  border-radius: 999px;
+  background: linear-gradient(135deg, #2f7d32, #57a15c);
+  color: #fff;
+  font-size: 13px;
+  font-weight: 800;
+  display: inline-block;
+}
+
 @media (max-width: 1080px) {
   .app-shell {
     grid-template-columns: 1fr;
